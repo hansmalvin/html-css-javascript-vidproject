@@ -6,13 +6,13 @@ body{
     display: flex;
 }
 .input-button input{
-    margin: 10px 0;
-    padding: 10px;
+    margin-bottom: 8px;
+    padding: 7px;
     width: 100%;
 }
 
 .input-button button{
-    margin: 0 4px;
-    padding: 6px 0;
-    width: 50px;
+    margin-bottom: 8px;
+    padding: 6px;
+    width: 55px;
 }
