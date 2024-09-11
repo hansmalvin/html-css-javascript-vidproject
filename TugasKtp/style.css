@@ -14,7 +14,7 @@ body {
 }
 
 section {
-    background-color: #86cafe;
+    background-image: url("bgktp.jpeg");
     border: 2px solid #bedbf6;
     border-radius: 10px;
     width: 378px;
@@ -42,6 +42,7 @@ section {
     font-size: .85rem;
     font-family: 'OCRAExtendedRegular';
     margin-bottom: 2px;
+    letter-spacing: 5px;
 }
 
 .isi-pertama{
@@ -61,8 +62,8 @@ section {
 
 .ttd{
     position: absolute;
-    right: 37px;
-    bottom: 10px;
+    right: 40px;
+    bottom: 7px;
 }
 
 .foto-pp{
@@ -73,9 +74,9 @@ section {
 }
 
 .foto-pp img {
-    width: 90px;
-    height: 110px;
-    border: 2px solid #ffffff;
+    width: 95px;
+    height: 115px;
+    border: 2px solid #bedbf6;
 }
 
 .foto-pp p {
