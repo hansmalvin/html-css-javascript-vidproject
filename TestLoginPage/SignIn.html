@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing on Sign In Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    
+    <!-- main class for sign in page -->
+     <div class="Kotak-Tengah">
+        <!-- class sign in -->
+        <div class="signin">
+            <h2>Sign in</h2>
+            <!-- form -->
+             <form id="sign-form">
+                <!-- firstname -->
+                <div class="box-input">
+                    <input type="text" id="fname" required>
+                    <label for="fname">First name</label>
+                </div>
+                <!-- last name -->
+                <div class="box-input">
+                    <input type="text" id="lname" required>
+                    <label for="lname">Last name</label>
+                </div>
+                <!-- email -->
+                <div class="box-input">
+                    <input type="email" id="emailId" required>
+                    <label for="emailId">Email</label>
+                </div>
+                <!-- password -->
+                <div class="box-input">
+                    <input type="password" id="passwd" required>
+                    <label for="passwd">Password</label>
+                </div>
+                <!-- show password -->
+                <div class="showpw-box">
+                    <input type="checkbox" id="showpwd">
+                    <label for="showpwd">Show Password</label>
+                </div>
+                <!-- class buttn -->
+                <button type="submit" class="buttn">Sign Up</button>
+             </form>
+        </div>
+     </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
