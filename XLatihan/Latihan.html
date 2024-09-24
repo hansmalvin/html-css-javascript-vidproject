@@ -3,28 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hypertrophy & Strength Training Schedule</title>
+  <title>Menu</title>
   <link rel="stylesheet" href="Lat.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-  <h1>Beginner Hypertrophy & Strength Training Schedule</h1>
+  <h1>Menu</h1>
   
-  <div class="accordion-container">
-    <div class="accordion-item">
-      <button class="accordion-btn">Senin - Chest & Triceps <span id="monday-status" class="status"></span></button>
-      <div class="accordion-content">
-        <h3>Chest:</h3>
-        <p><b>Compound Movement:</b> Incline bench press or variation (3 sets of 6-10 reps with medium load, rest 2-3 min).</p>
-        <p><b>Isolation Movement:</b> Pec fly or variation (3 sets of 8-12 reps with light-medium load, rest 2-3 min).</p>
-        <h3>Triceps:</h3>
-        <p><b>Overhead Cable Extension:</b> 3 sets of 6-10 reps with medium-heavy load, rest 2-3 min.</p>
-        <p><b>Pushdown:</b> 3 sets of 6-10 reps with medium-heavy load, rest 2-3 min.</p>
-        <button class="mark-done" onclick="markDay('monday')">Mark as Done</button>
-      </div>
-    </div>
+  <!-- senen -->
 
-    <div class="accordion-item">
-      <button class="accordion-btn">Selasa - Back & Biceps <span id="tuesday-status" class="status"></span></button>
+  <header class="header">
+    <a href="#" class="logo">T-Gym</a>
+    <!-- gambar logo belum-->
+
+    <div class="bx bx-menu"id="icon-utk-menu"></div>
+
+
+    <nav class="navbar">
+        <a href="#home">Beranda</a>
+        <a href="#manfaat">Manfaat</a>
+        <a href="#latihan"class="active">Latihan</a>
+        <a href="#menu">Menu</a>
+        <a href="/XXXLatihan/LatihanReal.html">Kembali</a>
+    </nav>
+  </header>
+  <section class="accord">
+
+    <div class="accordion-container">
+      <div class="accordion-item">
+        <button class="accordion-btn">Senin - Chest & Triceps <span id="monday-status" class="status"></span></button>
+        <div class="accordion-content">
+          <h3>Chest:</h3>
+          <p><b>Compound Movement:</b> Incline bench press or variation (3 sets of 6-10 reps with medium load, rest 2-3 min).</p>
+          <p><b>Isolation Movement:</b> Pec fly or variation (3 sets of 8-12 reps with light-medium load, rest 2-3 min).</p>
+          <h3>Triceps:</h3> 
+          <p><b>Overhead Cable Extension:</b> 3 sets of 6-10 reps with medium-heavy load, rest 2-3 min.</p>
+          <p><b>Pushdown:</b> 3 sets of 6-10 reps with medium-heavy load, rest 2-3 min.</p>
+          <button class="mark-done" onclick="markDay('monday')">Mark as Done</button>
+        </div>
+      </div>
+      
+      <!-- selasa -->
+      <div class="accordion-item">
+        <button class="accordion-btn">Selasa - Back & Biceps <span id="tuesday-status" class="status"></span></button>
       <div class="accordion-content">
         <h3>Back:</h3>
         <p><b>Pulldown Variation:</b> 4 sets (1 warm-up, 3 working sets of 6-10 reps with medium-heavy load).</p>
@@ -34,27 +56,30 @@
         <button class="mark-done" onclick="markDay('tuesday')">Mark as Done</button>
       </div>
     </div>
-
-    <div class="accordion-item">
+  </div>
+    
+    <!-- rabu -->
+    <!-- <div class="accordion-item">
       <button class="accordion-btn">Rabu - Rest Day <span id="wednesday-status" class="status"></span></button>
       <div class="accordion-content">
         <p>Time to rest and recover. Enjoy your rest day!</p>
         <button class="mark-done" onclick="markDay('wednesday')">Mark as Done</button>
       </div>
-    </div>
-
-    <!-- Add more days as per your schedule -->
-
-    <div class="accordion-item">
-      <button class="accordion-btn">Kamis - Shoulders <span id="kamis-status" class="status"></span></button>
-      <div class="accordion-content">
-        <p><b>Lateral Raises:</b> 4 sets of 12-15 reps with light load.</p>
-        <p><b>Shoulder Press:</b> 3 sets of 10-12 reps with medium-heavy load.</p>
-        <p><b>Rear Delt Fly:</b> 3 sets of 12-15 reps with light-medium load.</p>
-        <button class="mark-done" onclick="markDay('kamis')">Mark as Done</button>
+    </div> -->
+    
+    <!-- kamis -->
+    <div class="accordionte">
+      <div class="accordion-item">
+        <button class="accordion-btn">Kamis - Shoulders <span id="kamis-status" class="status"></span></button>
+        <div class="accordion-content">
+          <p><b>Lateral Raises:</b> 4 sets of 12-15 reps with light load.</p>
+          <p><b>Shoulder Press:</b> 3 sets of 10-12 reps with medium-heavy load.</p>
+          <p><b>Rear Delt Fly:</b> 3 sets of 12-15 reps with light-medium load.</p>
+          <button class="mark-done" onclick="markDay('kamis')">Mark as Done</button>
+        </div>
       </div>
-    </div>
-
+      
+      <!-- jumat -->
     <div class="accordion-item">
       <button class="accordion-btn">Jumat - Legs <span id="jumat-status" class="status"></span></button>
       <div class="accordion-content">
@@ -64,15 +89,9 @@
         <button class="mark-done" onclick="markDay('jumat')">Mark as Done</button>
       </div>
     </div>
-
-    <div class="accordion-item">
-      <button class="accordion-btn">Strength Training - SBD (Squat, Bench, Deadlift)</button>
-      <div class="accordion-content">
-        <p><b>Squat, Bench Press, Deadlift:</b> Focus on heavy compound lifts with progressive overload.</p>
-      </div>
-    </div>
   </div>
-
+    
+  </section>
   <script src="Latih.js"></script>
 </body>
 </html>
