@@ -4,7 +4,7 @@ $(document).ready(function() {
         $('.navbar').toggleClass('active');
     });
 
-    // buat alert
+    // buat alert dulu
     $('a[href="#error"]').click(function(event) {
         event.preventDefault(); 
         alert('Coming Soon!');
