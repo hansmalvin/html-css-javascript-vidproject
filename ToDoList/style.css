@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: tomato;
+}
+
+.container{
+    height: 500px;
+    width: 400px;
+    background: #ededed;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#input{
+    height: 2rem;
+    width: 70%;
+    outline: none;
+    border: none;
+    background: #6f6f6f;
+    color: #fff;
+    padding: 0 10px;
+    margin: 10px 0;
+    border-radius: .5rem;
+}
+
+#input::placeholder{
+    color: #fff;
+}
+
+#btn{
+    height: 2rem;
+    width: 28%;
+    background: #6f6f6f;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.filter-func{
+    height: 2rem;
+    width: 100%;
+    background: #6f6f6f;
+    color: #fff;
+    border-radius: .5rem;
+    padding: 0 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+ul li{
+    background: tomato;
+    color: #ededed;
+    height: 2.5rem;
+    border-radius: .5rem;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul .bx-check, .bx-trash{
+    position: absolute;
+    cursor: pointer;
+
+}
+
+ul .bx-check{
+    right: 40px;
+    color: #42ff03;
+}
+
+ul .bx-trash{
+    right: 15px;
+    color: #000000;
+}
+
+ul .checked{
+    background: #e712ff;
+    text-decoration: line-through;
+    transition: .3s;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="/jquery/jquery"></script>
+    <title>To Do List</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- input -->
+            <input type="text" id="input" placeholder="Masukkan...">
+            <!-- button -->
+            <button type="submit" id="btn">Add</button>
+            <!-- filter -->
+            <select name="filter" class="filter-func" id="filt">
+                <option value="all">Default</option>
+                <option value="completed">Done</option>
+                <option value="incomplete">Notyet</option>
+            </select>
+            <!-- filter kelar -->
+        <!-- untuk list nya -->
+        <ul></ul>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
